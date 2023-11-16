@@ -16,6 +16,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Make a contribution
-        run: npx contribution-streak-maintainer ${{github.repository}} --condition=5
+        run: npx contribution-streak-maintainer ${{github.repository}} --email=roynassif4@gmail.com --condition=10
         env:
           DEVFUL_GITHUB_TOKEN: ${{ secrets.STREAK_MAINTAINER_GITHUB_TOKEN }}
